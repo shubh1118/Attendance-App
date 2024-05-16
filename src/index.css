@@ -1,3 +1,4 @@
+/* General styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +11,44 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.input-field {
+  width: 93% !important;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4abba0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 30px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .input-field {
+    width: 90% !important; /* Adjust width for smaller screens */
+  }
+
+  .btn {
+    margin-right: 10px; /* Reduce margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .input-field {
+    width: 85% !important; /* Further adjust width for smallest screens */
+  }
+
+  .btn {
+    margin-right: 5px; /* Reduce margin further for smallest screens */
+  }
 }
