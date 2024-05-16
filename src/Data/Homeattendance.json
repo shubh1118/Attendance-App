@@ -1,0 +1,6 @@
+{
+ "yyyy-mm-dd": {
+   "signIn": "HH:mm:ss",
+   "signOut": "HH:mm:ss"
+ }
+}

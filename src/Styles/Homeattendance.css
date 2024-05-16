@@ -1,0 +1,93 @@
+/* General styles */
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+ background-color: #f0f8ff;
+ font-family: Arial, sans-serif;
+}
+
+.home-attendance {
+ width: 400px;
+ padding: 20px;
+ border: 1px solid #ccc;
+ border-radius: 10px;
+ background-color: white;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ text-align: center;
+}
+
+.home-attendance h1 {
+ margin-bottom: 20px;
+ font-size: 24px;
+ color: #333;
+}
+
+.home-attendance p {
+ margin-bottom: 20px;
+ font-size: 18px;
+ color: #666;
+}
+
+.home-attendance button {
+ width: 100%;
+ padding: 10px;
+ margin-top: 10px;
+ border: none;
+ border-radius: 5px;
+ background-color: #4abba0;
+ color: white;
+ cursor: pointer;
+ font-size: 16px;
+ transition: background-color 0.3s ease;
+}
+
+.home-attendance button:hover {
+ background-color: #369e79;
+}
+
+.home-attendance button + button {
+ margin-top: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+ .home-attendance {
+   width: 90%;
+   max-width: 400px; /* Ensure maximum width doesn't exceed 400px */
+ }
+
+ .home-attendance h1 {
+   font-size: 20px;
+ }
+
+ .home-attendance p {
+   font-size: 16px;
+ }
+
+ .home-attendance button {
+   font-size: 14px;
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .home-attendance {
+   width: 90%;
+   max-width: 300px; /* Adjust maximum width for smaller screens */
+   padding: 15px;
+ }
+
+ .home-attendance h1 {
+   font-size: 18px;
+ }
+
+ .home-attendance p {
+   font-size: 14px;
+ }
+
+ .home-attendance button {
+   font-size: 12px;
+ }
+}

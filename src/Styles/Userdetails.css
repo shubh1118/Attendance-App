@@ -1,0 +1,115 @@
+/* General styles */
+.user-details {
+ max-width: 800px;
+ margin: 20px auto;
+ padding: 20px;
+ border: 1px solid #ddd;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ background-color: #f9f9f9;
+}
+
+.user-details h1 {
+ text-align: center;
+ margin-bottom: 20px;
+ color: #333;
+}
+
+.user-details table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-bottom: 20px;
+}
+
+.user-details table th,
+.user-details table td {
+ padding: 12px;
+ text-align: left;
+ border: 1px solid #ddd;
+}
+
+.user-details table th {
+ background-color: #f2f2f2;
+}
+
+.pagination {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.pagination button {
+ padding: 8px 16px;
+ margin: 0 5px;
+ border: none;
+ border-radius: 4px;
+ background-color: #007bff;
+ color: white;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+ background-color: #ccc;
+ cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+ background-color: #0056b3;
+}
+
+.pagination span {
+ font-size: 16px;
+ color: #333;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+ .user-details {
+   padding: 10px;
+   border-radius: 0;
+ }
+
+ .user-details h1 {
+   margin-bottom: 15px;
+   font-size: 24px;
+ }
+
+ .user-details table th,
+ .user-details table td {
+   padding: 10px;
+ }
+
+ .pagination button {
+   padding: 6px 12px;
+   margin: 0 3px;
+   font-size: 14px;
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .user-details {
+   margin: 10px auto;
+   padding: 8px;
+ }
+
+ .user-details h1 {
+   margin-bottom: 10px;
+   font-size: 20px;
+ }
+
+ .user-details table th,
+ .user-details table td {
+   padding: 8px;
+ }
+
+ .pagination button {
+   padding: 4px 8px;
+   margin: 0 2px;
+   font-size: 12px;
+ }
+
+ .pagination span {
+   font-size: 14px;
+ }
+}

@@ -1,0 +1,68 @@
+/* General styles */
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+ background-color: #f0f8ff;
+ font-family: Arial, sans-serif;
+}
+
+.admin-page {
+ width: 400px;
+ padding: 20px;
+ border: 1px solid #ccc;
+ border-radius: 10px;
+ background-color: white;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ text-align: center;
+}
+
+.admin-page h1 {
+ margin-bottom: 20px;
+ font-size: 24px;
+ color: #333;
+}
+
+.admin-page ul {
+ list-style-type: none;
+ padding: 0;
+}
+
+.admin-page li {
+ padding: 10px;
+ margin: 5px 0;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.admin-page li:hover {
+ background-color: #f0f8ff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+ .admin-page {
+   width: 90%;
+   max-width: 400px; /* Ensure maximum width doesn't exceed 400px */
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .admin-page {
+   width: 90%;
+   max-width: 300px; /* Adjust maximum width for smaller screens */
+   padding: 15px;
+ }
+
+ .admin-page h1 {
+   font-size: 20px;
+ }
+
+ .admin-page li {
+   padding: 8px;
+ }
+}
